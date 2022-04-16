@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Weather Application (Погода)</string>
+    <string name="description_string">Узнать погоду в любом городе мира</string>
+    <string name="input_text">Омск</string>
+    <string name="input_hint">Введите название города</string>
+    <string name="weather_button_text">Узнать погоду</string>
+    <string name="copyright_string">(С) Смалев Сергей Николаевич</string>
+    <string name="data_output_text">Здесь будут показаны данные по темературе</string>
+    <string name="empty_input">Введите город!</string>
+
+</resources>

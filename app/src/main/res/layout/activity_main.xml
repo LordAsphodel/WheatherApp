@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg_color"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/description"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/get_city_layout"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/description_string"
+        android:textAlignment="center"
+        android:textColor="@color/layout_text_color"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/get_city_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25" />
+
+        <LinearLayout
+            android:id="@+id/input_text_button_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/input_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+
+                android:hint="@string/input_hint"
+
+                android:background="@color/white"
+                android:ems="10"
+
+                android:inputType="textPersonName"
+                android:text="@string/input_text"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textColor="@color/layout_text_color"
+                android:textColorHint="@color/layout_bg_color"/>
+
+                <Button
+                    android:id="@+id/get_weather_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:layout_weight="0.5"
+
+                    android:text="@string/weather_button_text" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/data_output"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/copyright_label"
+        android:layout_below="@+id/get_city_layout"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="10sp"
+
+        android:textAlignment="center"
+        android:textColor="@color/layout_text_color"
+        android:text="@string/data_output_text" />
+
+    <TextView
+        android:id="@+id/copyright_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:textAlignment="center"
+        android:textColor="@color/layout_text_color"
+        android:text="@string/copyright_string" />
+
+</RelativeLayout>
